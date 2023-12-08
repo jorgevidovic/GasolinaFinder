@@ -3,15 +3,13 @@ Descripción de la Aplicación: GasolinaFinder es una aplicación móvil innovad
 
 Características Principales:
 
-Conexión en Tiempo Real: GasolinaFinder se conecta de forma directa a la API pública del estado español, asegurando que los datos proporcionados sean siempre actuales y precisos.
+- Conexión en Tiempo Real: GasolinaFinder se conecta de forma directa a la API pública del estado español, asegurando que los datos proporcionados sean siempre actuales y precisos.
 
-Filtros Personalizables: Los usuarios pueden personalizar su búsqueda según su ubicación, tipo de gasolina, marcas específicas o rango de precios. Esto garantiza que obtengan información relevante para sus necesidades específicas.
+- Filtros Personalizables: Los usuarios pueden personalizar su búsqueda según su ubicación, tipo de gasolina, marcas específicas o rango de precios. Esto garantiza que obtengan información relevante para sus necesidades específicas.
 
-Mapa Interactivo: La aplicación presenta un mapa interactivo que muestra las estaciones de servicio cercanas y sus respectivos precios. Los usuarios pueden explorar visualmente las opciones disponibles y seleccionar la más conveniente.
+- Mapa Interactivo: La aplicación presenta un mapa interactivo que muestra las estaciones de servicio cercanas y sus respectivos precios. Los usuarios pueden explorar visualmente las opciones disponibles y seleccionar la más conveniente.
 
-Notificaciones Personalizadas: GasolinaFinder permite a los usuarios establecer alertas para recibir notificaciones cuando el precio de la gasolina alcance un valor específico en su área de interés.
-
-Historial de Precios: Registra y muestra el historial de precios para que los usuarios puedan realizar un seguimiento de las fluctuaciones a lo largo del tiempo.
+- Notificaciones Personalizadas: GasolinaFinder permite a los usuarios establecer alertas para recibir notificaciones cuando el precio de la gasolina alcance un valor específico en su área de interés.
 
 ¿Por qué GasolinaFinder?
 
