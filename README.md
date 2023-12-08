@@ -1,4 +1,4 @@
-# GasolineFinder
+# GasolinaFinder
 Descripción de la Aplicación: GasolinaFinder es una aplicación móvil innovadora diseñada para mantener a los conductores informados sobre los precios actuales de la gasolina en toda España. Con una interfaz intuitiva y fácil de usar, GasolinaFinder se conecta a una API pública del estado español para ofrecer datos precisos y actualizados sobre los precios de la gasolina.
 
 Características Principales:
