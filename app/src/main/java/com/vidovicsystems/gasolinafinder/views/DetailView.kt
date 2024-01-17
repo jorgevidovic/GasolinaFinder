@@ -30,7 +30,7 @@ fun DetailView(navController: NavController) {
             TopAppBar(
                 title = { TitleBar(name = "GasolinaFinder") },
                 colors = TopAppBarDefaults.mediumTopAppBarColors(
-                    containerColor = Color.Yellow
+                    containerColor = Color.Red
                 ), navigationIcon = {
                     MainIconButton(icon = Icons.Default.ArrowBack) {
                         navController.popBackStack()
@@ -52,7 +52,7 @@ fun ContentDetailView(navController: NavController) {
     ) {
         TitleView(name = "GasolinaFinder")
         Space()
-        MainButton(name = "Volver", backColor = Color.Yellow, color = Color.Black) {
+        MainButton(name = "Volver", backColor = Color.Red, color = Color.White) {
             navController.popBackStack()
         }
     }

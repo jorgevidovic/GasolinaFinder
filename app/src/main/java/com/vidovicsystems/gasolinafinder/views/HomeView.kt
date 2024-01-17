@@ -30,7 +30,7 @@ fun HomeView(navController: NavController) {
             CenterAlignedTopAppBar(
                 title = { TitleBar(name = "GasolinaFinder") },
                 colors = TopAppBarDefaults.centerAlignedTopAppBarColors(
-                    containerColor = Color.Yellow
+                    containerColor = Color.Red
                 )
             )
         },
@@ -52,7 +52,7 @@ fun ContentHomeView(navController: NavController) {
         Image(painter = painterResource(id = R.drawable.gasolinafinder),
             contentDescription = "GasolinaFinder" )
         Space()
-        MainButton(name = "Buscar", backColor = Color.Yellow, color = Color.Black) {
+        MainButton(name = "Buscar", backColor = Color.Red, color = Color.White) {
             navController.navigate("Detail")
         }
     }
