@@ -44,7 +44,7 @@ fun ContentHomeView(viewModel: PriceViewModel, pad: PaddingValues, navController
                 navController.navigate("DetailView/${item.IDEESS}")
             }
             
-            Text(text = item.Dirección,
+            Text(text = item.IDEESS,
                 fontWeight = FontWeight.ExtraBold,
                 color = Color.Black,
                 modifier = Modifier.padding(start = 10.dp)

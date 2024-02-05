@@ -1,11 +1,18 @@
 package com.vidovicsystems.gasolinafinder.data
 
-import com.vidovicsystems.gasolinafinder.model.PriceModel
+import com.vidovicsystems.gasolinafinder.model.GasStationModel
+import com.vidovicsystems.gasolinafinder.model.SingleGasStationModel
 import com.vidovicsystems.gasolinafinder.util.Constants.Companion.ENDPOINT
 import retrofit2.Response
 import retrofit2.http.GET
+import retrofit2.http.Path
 
 interface GasolinaFinderAPI {
     @GET(ENDPOINT)
-    suspend fun getPrices(): Response<PriceModel>
+    suspend fun getGasStations(): Response<GasStationModel>
+
+    // Aquí me gustaría filtrar por provincia y municipio
+    @GET("$ENDPOINT/{IDEESS}")
+    suspend fun getGasStationById(@Path(value = "IDEESS") IDEESS: String): Response<SingleGasStationModel>
+
 }
