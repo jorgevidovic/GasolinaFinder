@@ -20,14 +20,14 @@ import com.vidovicsystems.gasolinafinder.viewModel.PriceViewModel
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun DetailView(viewModel: PriceViewModel, navController: NavController, id: String){
+fun DetailView(viewModel: PriceViewModel, navController: NavController, IDEESS: String){
     LaunchedEffect(Unit){
-        viewModel.getGasStationById(id)
+        viewModel.getGasStationById(IDEESS)
     }
 
     Scaffold(
         topBar = {
-            MainTopBar(title = viewModel.state.Dirección, showBackButton = true) {
+            MainTopBar(title = IDEESS, showBackButton = true) {
                 navController.popBackStack()
             }
         }
@@ -40,6 +40,7 @@ fun DetailView(viewModel: PriceViewModel, navController: NavController, id: Stri
 @Composable
 fun ContentDetailView(pad: PaddingValues, viewModel: PriceViewModel){
     val state = viewModel.state
+
     Column (modifier = Modifier
         .padding(pad)
     ) {

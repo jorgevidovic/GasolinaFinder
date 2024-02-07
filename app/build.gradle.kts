@@ -3,6 +3,8 @@ plugins {
     id("org.jetbrains.kotlin.android")
     kotlin("kapt")
     id("com.google.dagger.hilt.android")
+    id ("com.google.gms.google-services")
+
 }
 
 android {
@@ -77,4 +79,9 @@ dependencies {
 
     //Coil
     implementation("io.coil-kt:coil-compose:1.4.0")
+
+    //Firebase
+    implementation (platform("com.google.firebase:firebase-bom:32.7.1"))
+    implementation ("com.google.firebase:firebase-auth-ktx:22.3.1")
+    implementation ("com.google.firebase:firebase-firestore-ktx:24.10.1")
 }
