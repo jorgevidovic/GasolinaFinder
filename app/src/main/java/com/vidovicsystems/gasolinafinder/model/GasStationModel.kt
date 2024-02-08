@@ -4,21 +4,19 @@ data class GasStationModel(
     val Fecha: String,
     val Nota: String,
     val ResultadoConsulta: String,
-    val ListaEESSPrecio: List<PriceList>
+    val ListaEESSPrecio: List<GasStationList>
 )
 
-data class PriceList(
+data class GasStationList(
     //val `C.P.`: String,
     val Dirección: String,
-
-    /*
     val Horario: String,
     val Latitud: String,
     val Localidad: String,
     val `Longitud_x0020__x0028_WGS84_x0029_`: String,
     val Margen: String,
-    val Municipio: String*/
-    /*val Precio_x0020_Biodiesel: String,
+    val Municipio: String,
+    val Precio_x0020_Biodiesel: String,
     val Precio_x0020_Bioetanol: String,
     val Precio_x0020_Gas_x0020_Natural_x0020_Comprimido: String,
     val Precio_x0020_Gas_x0020_Natural_x0020_Licuado: String,
@@ -37,10 +35,9 @@ data class PriceList(
     val Rótulo: String,
     val Tipo_x0020_Venta: String,
     val `_x0025__x0020_BioEtanol`: String,
-    val `_x0025__x0020_Éster_x0020_metílico`: String, */
+    val `_x0025__x0020_Éster_x0020_metílico`: String,
     val IDEESS: String,
-    /*
     val IDMunicipio: String,
     val IDProvincia: String,
-    val IDCCAA: String*/
+    val IDCCAA: String
 )

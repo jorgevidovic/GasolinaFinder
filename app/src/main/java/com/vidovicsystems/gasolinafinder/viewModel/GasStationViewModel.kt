@@ -5,8 +5,8 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.vidovicsystems.gasolinafinder.model.PriceList
-import com.vidovicsystems.gasolinafinder.repository.PriceRepository
+import com.vidovicsystems.gasolinafinder.model.GasStationList
+import com.vidovicsystems.gasolinafinder.repository.GasStationRepository
 import com.vidovicsystems.gasolinafinder.state.GasStationState
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.Dispatchers
@@ -17,8 +17,8 @@ import kotlinx.coroutines.withContext
 import javax.inject.Inject
 
 @HiltViewModel
-class PriceViewModel @Inject constructor(private val repository: PriceRepository) : ViewModel() {
-    private val _prices = MutableStateFlow<List<PriceList>>(emptyList())
+class GasStationViewModel @Inject constructor(private val repository: GasStationRepository) : ViewModel() {
+    private val _prices = MutableStateFlow<List<GasStationList>>(emptyList())
     val prices = _prices.asStateFlow()
 
     var state by mutableStateOf(GasStationState())
@@ -34,6 +34,11 @@ class PriceViewModel @Inject constructor(private val repository: PriceRepository
                 _prices.value = result ?: emptyList()
             }
         }
+    }
+
+    fun getGasStationByIdLocale(IDEESS: String): GasStationList? {
+
+        return prices.value?.find { it.IDEESS == IDEESS }
     }
 
     fun getGasStationById(IDEESS: String){

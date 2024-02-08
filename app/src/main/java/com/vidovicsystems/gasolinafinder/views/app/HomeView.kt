@@ -1,4 +1,4 @@
-package com.vidovicsystems.gasolinafinder.views
+package com.vidovicsystems.gasolinafinder.views.app
 
 import android.annotation.SuppressLint
 import androidx.compose.foundation.layout.PaddingValues
@@ -18,12 +18,12 @@ import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import com.vidovicsystems.gasolinafinder.components.GasStationCard
 import com.vidovicsystems.gasolinafinder.components.MainTopBar
-import com.vidovicsystems.gasolinafinder.viewModel.PriceViewModel
+import com.vidovicsystems.gasolinafinder.viewModel.GasStationViewModel
 
 @SuppressLint("UnusedMaterial3ScaffoldPaddingParameter")
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun HomeView(viewModel: PriceViewModel, navController: NavController) {
+fun HomeView(viewModel: GasStationViewModel, navController: NavController) {
 
     Scaffold(
         topBar = {
@@ -36,7 +36,7 @@ fun HomeView(viewModel: PriceViewModel, navController: NavController) {
 
 
 @Composable
-fun ContentHomeView(viewModel: PriceViewModel, pad: PaddingValues, navController: NavController) {
+fun ContentHomeView(viewModel: GasStationViewModel, pad: PaddingValues, navController: NavController) {
     val prices by viewModel.prices.collectAsState()
     LazyColumn(modifier = Modifier.padding(pad)){
         items(prices){ item ->

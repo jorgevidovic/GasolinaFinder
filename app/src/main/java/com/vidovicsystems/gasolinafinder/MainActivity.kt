@@ -10,14 +10,14 @@ import androidx.compose.material3.Surface
 import androidx.compose.ui.Modifier
 import com.vidovicsystems.gasolinafinder.navigation.NavManager
 import com.vidovicsystems.gasolinafinder.ui.theme.GasolinaFinderTheme
-import com.vidovicsystems.gasolinafinder.viewModel.PriceViewModel
+import com.vidovicsystems.gasolinafinder.viewModel.GasStationViewModel
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        val viewModel : PriceViewModel by viewModels()
+        val viewModel : GasStationViewModel by viewModels()
 
         setContent {
             GasolinaFinderTheme {
@@ -26,6 +26,7 @@ class MainActivity : ComponentActivity() {
                     color = MaterialTheme.colorScheme.background
                 ) {
                     NavManager(viewModel)
+                    //TabsView()
                 }
             }
         }

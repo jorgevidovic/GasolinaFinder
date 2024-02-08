@@ -1,12 +1,12 @@
 package com.vidovicsystems.gasolinafinder.repository
 
 import com.vidovicsystems.gasolinafinder.data.GasolinaFinderAPI
-import com.vidovicsystems.gasolinafinder.model.PriceList
+import com.vidovicsystems.gasolinafinder.model.GasStationList
 import com.vidovicsystems.gasolinafinder.model.SingleGasStationModel
 import javax.inject.Inject
 
-class PriceRepository @Inject constructor(private val gasolinaFinderAPI: GasolinaFinderAPI){
-    suspend fun getGasStations(): List<PriceList>?{
+class GasStationRepository @Inject constructor(private val gasolinaFinderAPI: GasolinaFinderAPI){
+    suspend fun getGasStations(): List<GasStationList>?{
         val response = gasolinaFinderAPI.getGasStations()
         if (response.isSuccessful){
             return response.body()?.ListaEESSPrecio

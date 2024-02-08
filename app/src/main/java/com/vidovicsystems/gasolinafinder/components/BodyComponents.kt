@@ -27,7 +27,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.vidovicsystems.gasolinafinder.model.PriceList
+import com.vidovicsystems.gasolinafinder.model.GasStationList
 
 
 @Composable
@@ -77,7 +77,7 @@ fun MainTopBar(title: String, showBackButton: Boolean = false, onClickBackButton
 }
 
 @Composable
-fun GasStationCard(price: PriceList, onClick: () -> Unit) {
+fun GasStationCard(price: GasStationList, onClick: () -> Unit) {
     Card(
         shape = RoundedCornerShape(5.dp),
         modifier = Modifier
@@ -96,6 +96,6 @@ fun MainImage() {
     Icon(
         imageVector = Icons.Default.LocationOn,
         contentDescription = "Icono de ubicación",
-        modifier = Modifier.size(24.dp)
+        modifier = Modifier.size(50.dp)
     )
 }
