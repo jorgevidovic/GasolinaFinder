@@ -7,15 +7,21 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
 import com.vidovicsystems.gasolinafinder.viewModel.GasStationViewModel
+import com.vidovicsystems.gasolinafinder.viewModel.LoginViewModel
 import com.vidovicsystems.gasolinafinder.views.app.DetailView
 import com.vidovicsystems.gasolinafinder.views.app.HomeView
+import com.vidovicsystems.gasolinafinder.views.login.TabsView
 
 @Composable
-fun NavManager(viewModel: GasStationViewModel){
+fun NavManager(loginViewModel: LoginViewModel, gasStationViewModel: GasStationViewModel){
     val navController = rememberNavController()
-    NavHost(navController = navController, startDestination = "Home"){
+    NavHost(navController = navController, startDestination = "Login"){
+        composable("Login"){
+            TabsView(navController, loginViewModel)
+        }
+
         composable("Home"){
-            HomeView(viewModel, navController)
+            HomeView(gasStationViewModel, navController)
         }
         composable("DetailView/{IDEESS}", arguments = listOf(
             navArgument("IDEESS"){
@@ -23,7 +29,7 @@ fun NavManager(viewModel: GasStationViewModel){
             }
         )){
             val id = it.arguments?.getString("IDEESS") ?: 0
-            DetailView(viewModel, navController, id.toString())
+            DetailView(gasStationViewModel, navController, id.toString())
         }
     }
 }

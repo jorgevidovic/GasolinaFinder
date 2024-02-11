@@ -31,6 +31,7 @@ fun HomeView(viewModel: GasStationViewModel, navController: NavController) {
         }
     ) {
         ContentHomeView(viewModel, it, navController)
+        //LoginView()
     }
 }
 

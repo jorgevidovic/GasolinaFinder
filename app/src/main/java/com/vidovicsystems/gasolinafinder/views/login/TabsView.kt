@@ -13,9 +13,11 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.navigation.NavController
+import com.vidovicsystems.gasolinafinder.viewModel.LoginViewModel
 
 @Composable
-fun TabsView() {
+fun TabsView(navController: NavController, loginViewModel: LoginViewModel) {
     var selectedTab by remember { mutableStateOf(0) }
     val tabs = listOf("Iniciar sesión", "Registrarse")
 
@@ -38,9 +40,9 @@ fun TabsView() {
             }
         }
 
-        when (selectedTab){
-            0 -> LoginView()
-            1 -> RegisterView()
+        when (selectedTab) {
+            0 -> LoginView(navController, loginViewModel)
+            1 -> RegisterView(navController, loginViewModel)
         }
 
     }
