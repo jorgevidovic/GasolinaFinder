@@ -6,7 +6,7 @@ import androidx.compose.runtime.setValue
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.vidovicsystems.gasolinafinder.model.GasStationList
-import com.vidovicsystems.gasolinafinder.repository.GasStationRepository
+import com.vidovicsystems.gasolinafinder.networkModule.repository.GasStationRepository
 import com.vidovicsystems.gasolinafinder.state.GasStationState
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.Dispatchers

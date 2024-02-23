@@ -23,6 +23,7 @@ import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
+import com.vidovicsystems.gasolinafinder.components.Alert
 import com.vidovicsystems.gasolinafinder.viewModel.LoginViewModel
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -68,6 +69,16 @@ fun LoginView(navController: NavController, loginViewModel: LoginViewModel) {
                 .padding(start = 30.dp, end = 30.dp)
         ) {
             Text(text = "Entrar")
+        }
+
+        if(loginViewModel.showAlert){
+            Alert(
+                title = "Alerta",
+                message = "Usuario y/o contraseña incorrectos",
+                confirmText = "Aceptar" ,
+                onConfirmClick = { loginViewModel.closeAlert()}) {
+                
+            }
         }
     }
 }

@@ -1,7 +1,6 @@
-package com.vidovicsystems.gasolinafinder.di
+package com.vidovicsystems.gasolinafinder.networkModule
 
-import com.vidovicsystems.gasolinafinder.data.GasolinaFinderAPI
-import com.vidovicsystems.gasolinafinder.util.Constants.Companion.BASE_URL
+import com.vidovicsystems.gasolinafinder.networkModule.Constants.Companion.BASE_URL
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
