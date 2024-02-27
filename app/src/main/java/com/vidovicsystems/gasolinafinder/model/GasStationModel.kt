@@ -1,6 +1,10 @@
 package com.vidovicsystems.gasolinafinder.model
 
+import com.google.gson.annotations.SerializedName
+
+
 data class GasStationModel(
+    @SerializedName("Fecha")
     val Fecha: String,
     val Nota: String,
     val ResultadoConsulta: String,

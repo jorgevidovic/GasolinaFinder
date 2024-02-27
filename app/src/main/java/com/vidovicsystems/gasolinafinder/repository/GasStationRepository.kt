@@ -1,4 +1,4 @@
-package com.vidovicsystems.gasolinafinder.networkModule.repository
+package com.vidovicsystems.gasolinafinder.repository
 
 import com.vidovicsystems.gasolinafinder.model.GasStationList
 import com.vidovicsystems.gasolinafinder.model.SingleGasStationModel

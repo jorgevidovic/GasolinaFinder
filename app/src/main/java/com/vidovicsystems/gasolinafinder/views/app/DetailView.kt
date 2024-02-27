@@ -18,6 +18,8 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
+import androidx.compose.runtime.collectAsState
+import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
@@ -30,6 +32,8 @@ import com.vidovicsystems.gasolinafinder.viewModel.GasStationViewModel
 @Composable
 fun DetailView(viewModel: GasStationViewModel, navController: NavController, IDEESS: String) {
     val gasStation = viewModel.getGasStationByIdLocale(IDEESS)
+
+    val state by viewModel.prices.collectAsState()
 
     LaunchedEffect(Unit) {
         viewModel.getGasStationById(IDEESS)

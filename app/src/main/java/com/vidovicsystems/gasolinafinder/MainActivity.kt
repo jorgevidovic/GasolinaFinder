@@ -11,14 +11,13 @@ import androidx.compose.ui.Modifier
 import com.vidovicsystems.gasolinafinder.navigation.NavManager
 import com.vidovicsystems.gasolinafinder.ui.theme.GasolinaFinderTheme
 import com.vidovicsystems.gasolinafinder.viewModel.GasStationViewModel
-import com.vidovicsystems.gasolinafinder.viewModel.LoginViewModel
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        val loginViewModel: LoginViewModel by viewModels()
+
         val gasStationViewModel : GasStationViewModel by viewModels()
 
         setContent {
@@ -27,7 +26,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    NavManager(loginViewModel, gasStationViewModel)
+                    NavManager(gasStationViewModel)
                 }
             }
         }

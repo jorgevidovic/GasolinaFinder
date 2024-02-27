@@ -6,12 +6,11 @@ import androidx.compose.runtime.setValue
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.vidovicsystems.gasolinafinder.model.GasStationList
-import com.vidovicsystems.gasolinafinder.networkModule.repository.GasStationRepository
+import com.vidovicsystems.gasolinafinder.repository.GasStationRepository
 import com.vidovicsystems.gasolinafinder.state.GasStationState
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.MutableStateFlow
-import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import javax.inject.Inject
@@ -19,7 +18,7 @@ import javax.inject.Inject
 @HiltViewModel
 class GasStationViewModel @Inject constructor(private val repository: GasStationRepository) : ViewModel() {
     private val _prices = MutableStateFlow<List<GasStationList>>(emptyList())
-    val prices = _prices.asStateFlow()
+    val prices = _prices
 
     var state by mutableStateOf(GasStationState())
         private set
