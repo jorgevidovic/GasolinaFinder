@@ -1,4 +1,4 @@
-package com.vidovicsystems.gasolinafinder.networkModule
+package com.vidovicsystems.gasolinafinder.data.networkModule
 
 
 class Constants {

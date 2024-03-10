@@ -1,6 +1,6 @@
-package com.vidovicsystems.gasolinafinder.networkModule
+package com.vidovicsystems.gasolinafinder.data.networkModule
 
-import com.vidovicsystems.gasolinafinder.networkModule.Constants.Companion.BASE_URL
+import com.vidovicsystems.gasolinafinder.data.networkModule.Constants.Companion.BASE_URL
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -23,7 +23,7 @@ object AppModule {
 
     @Singleton
     @Provides
-    fun providesGasolinaFinderAPI(retrofit: Retrofit):GasolinaFinderAPI {
+    fun providesGasolinaFinderAPI(retrofit: Retrofit): GasolinaFinderAPI {
        return retrofit.create(GasolinaFinderAPI::class.java)
     }
 }

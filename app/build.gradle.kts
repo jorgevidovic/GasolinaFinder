@@ -85,4 +85,16 @@ dependencies {
     implementation (platform("com.google.firebase:firebase-bom:32.7.1"))
     implementation ("com.google.firebase:firebase-auth-ktx:22.3.1")
     implementation ("com.google.firebase:firebase-firestore-ktx:24.10.1")
+
+    //Room
+    val room_version = "2.6.0"
+
+    implementation("androidx.room:room-runtime:$room_version")
+    annotationProcessor("androidx.room:room-compiler:$room_version")
+
+    // To use Kotlin annotation processing tool (kapt)
+    kapt("androidx.room:room-compiler:$room_version")
+
+    // optional - Kotlin Extensions and Coroutines support for Room
+    implementation("androidx.room:room-ktx:$room_version")
 }
