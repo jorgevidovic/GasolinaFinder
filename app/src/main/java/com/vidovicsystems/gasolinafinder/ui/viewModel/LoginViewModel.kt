@@ -1,4 +1,4 @@
-package com.vidovicsystems.gasolinafinder.viewModel
+package com.vidovicsystems.gasolinafinder.ui.viewModel
 
 import android.util.Log
 import androidx.compose.runtime.getValue

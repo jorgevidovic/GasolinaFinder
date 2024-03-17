@@ -1,4 +1,4 @@
-package com.vidovicsystems.gasolinafinder.components
+package com.vidovicsystems.gasolinafinder.ui.components
 
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll

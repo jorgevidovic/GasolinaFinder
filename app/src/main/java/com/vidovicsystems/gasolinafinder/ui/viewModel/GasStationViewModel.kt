@@ -1,13 +1,13 @@
-package com.vidovicsystems.gasolinafinder.viewModel
+package com.vidovicsystems.gasolinafinder.ui.viewModel
 
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.vidovicsystems.gasolinafinder.model.GasStationList
+import com.vidovicsystems.gasolinafinder.domain.GasStationList
 import com.vidovicsystems.gasolinafinder.data.repository.GasStationRepository
-import com.vidovicsystems.gasolinafinder.state.GasStationState
+import com.vidovicsystems.gasolinafinder.ui.state.GasStationState
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.MutableStateFlow

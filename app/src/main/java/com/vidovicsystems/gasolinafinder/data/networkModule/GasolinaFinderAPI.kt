@@ -1,7 +1,7 @@
 package com.vidovicsystems.gasolinafinder.data.networkModule
 
-import com.vidovicsystems.gasolinafinder.model.GasStationModel
-import com.vidovicsystems.gasolinafinder.model.SingleGasStationModel
+import com.vidovicsystems.gasolinafinder.domain.GasStationModel
+import com.vidovicsystems.gasolinafinder.domain.SingleGasStationModel
 import com.vidovicsystems.gasolinafinder.data.networkModule.Constants.Companion.ENDPOINT
 import retrofit2.Response
 import retrofit2.http.GET

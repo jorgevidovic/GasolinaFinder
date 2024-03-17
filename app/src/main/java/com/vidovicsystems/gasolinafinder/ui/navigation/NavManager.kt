@@ -1,4 +1,4 @@
-package com.vidovicsystems.gasolinafinder.navigation
+package com.vidovicsystems.gasolinafinder.ui.navigation
 
 import androidx.compose.runtime.Composable
 import androidx.navigation.NavType
@@ -6,10 +6,10 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
-import com.vidovicsystems.gasolinafinder.viewModel.GasStationViewModel
-import com.vidovicsystems.gasolinafinder.views.app.DetailView
-import com.vidovicsystems.gasolinafinder.views.app.HomeView
-import com.vidovicsystems.gasolinafinder.views.login.TabsView
+import com.vidovicsystems.gasolinafinder.ui.viewModel.GasStationViewModel
+import com.vidovicsystems.gasolinafinder.ui.views.app.DetailView
+import com.vidovicsystems.gasolinafinder.ui.views.app.HomeView
+import com.vidovicsystems.gasolinafinder.ui.views.login.TabsView
 
 @Composable
 fun NavManager(gasStationViewModel: GasStationViewModel){

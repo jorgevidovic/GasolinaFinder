@@ -1,4 +1,4 @@
-package com.vidovicsystems.gasolinafinder.views.app
+package com.vidovicsystems.gasolinafinder.ui.views.app
 
 import android.annotation.SuppressLint
 import androidx.compose.foundation.layout.PaddingValues
@@ -16,9 +16,9 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
-import com.vidovicsystems.gasolinafinder.components.GasStationCard
-import com.vidovicsystems.gasolinafinder.components.MainTopBar
-import com.vidovicsystems.gasolinafinder.viewModel.GasStationViewModel
+import com.vidovicsystems.gasolinafinder.ui.components.GasStationCard
+import com.vidovicsystems.gasolinafinder.ui.components.MainTopBar
+import com.vidovicsystems.gasolinafinder.ui.viewModel.GasStationViewModel
 
 @SuppressLint("UnusedMaterial3ScaffoldPaddingParameter")
 @OptIn(ExperimentalMaterial3Api::class)

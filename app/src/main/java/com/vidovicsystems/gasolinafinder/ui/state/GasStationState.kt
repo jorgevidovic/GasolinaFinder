@@ -1,4 +1,4 @@
-package com.vidovicsystems.gasolinafinder.state
+package com.vidovicsystems.gasolinafinder.ui.state
 
 data class GasStationState(
     val IDEESS: String = "",

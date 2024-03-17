@@ -1,4 +1,4 @@
-package com.vidovicsystems.gasolinafinder.views.login
+package com.vidovicsystems.gasolinafinder.ui.views.login
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
@@ -23,8 +23,8 @@ import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
-import com.vidovicsystems.gasolinafinder.components.Alert
-import com.vidovicsystems.gasolinafinder.viewModel.LoginViewModel
+import com.vidovicsystems.gasolinafinder.ui.components.Alert
+import com.vidovicsystems.gasolinafinder.ui.viewModel.LoginViewModel
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable

@@ -1,8 +1,8 @@
 package com.vidovicsystems.gasolinafinder.data.repository
 
 import com.vidovicsystems.gasolinafinder.data.networkModule.GasolinaFinderAPI
-import com.vidovicsystems.gasolinafinder.model.GasStationList
-import com.vidovicsystems.gasolinafinder.model.SingleGasStationModel
+import com.vidovicsystems.gasolinafinder.domain.GasStationList
+import com.vidovicsystems.gasolinafinder.domain.SingleGasStationModel
 import javax.inject.Inject
 
 class GasStationRepository @Inject constructor(private val gasolinaFinderAPI: GasolinaFinderAPI){

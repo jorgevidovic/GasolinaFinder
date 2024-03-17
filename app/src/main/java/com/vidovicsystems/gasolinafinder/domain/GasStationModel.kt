@@ -1,12 +1,23 @@
-package com.vidovicsystems.gasolinafinder.model
+package com.vidovicsystems.gasolinafinder.domain
 
-data class SingleGasStationModel(
-    val IDEESS: String,
-    val Rótulo: String,
+import com.google.gson.annotations.SerializedName
+
+
+data class GasStationModel(
+    @SerializedName("Fecha")
+    val Fecha: String,
+    val Nota: String,
+    val ResultadoConsulta: String,
+    val ListaEESSPrecio: List<GasStationList>
+)
+
+data class GasStationList(
+    //val `C.P.`: String,
     val Dirección: String,
-    val Provincia: String,
     val Horario: String,
+    val Latitud: String,
     val Localidad: String,
+    val `Longitud_x0020__x0028_WGS84_x0029_`: String,
     val Margen: String,
     val Municipio: String,
     val Precio_x0020_Biodiesel: String,
@@ -22,7 +33,15 @@ data class SingleGasStationModel(
     val Precio_x0020_Gasolina_x0020_95_x0020_E5_x0020_Premium: String,
     val Precio_x0020_Gasolina_x0020_98_x0020_E10: String,
     val Precio_x0020_Gasolina_x0020_98_x0020_E5: String,
-    val Precio_x0020_Hidrogeno: String
-){
-
-}
+    val Precio_x0020_Hidrogeno: String,
+    val Provincia: String,
+    val Remisión: String,
+    val Rótulo: String,
+    val Tipo_x0020_Venta: String,
+    val `_x0025__x0020_BioEtanol`: String,
+    val `_x0025__x0020_Éster_x0020_metílico`: String,
+    val IDEESS: String,
+    val IDMunicipio: String,
+    val IDProvincia: String,
+    val IDCCAA: String
+)

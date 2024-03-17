@@ -1,4 +1,4 @@
-package com.vidovicsystems.gasolinafinder.components
+package com.vidovicsystems.gasolinafinder.ui.components
 
 
 import androidx.compose.foundation.clickable
@@ -27,7 +27,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.vidovicsystems.gasolinafinder.model.GasStationList
+import com.vidovicsystems.gasolinafinder.domain.GasStationList
 
 
 @Composable

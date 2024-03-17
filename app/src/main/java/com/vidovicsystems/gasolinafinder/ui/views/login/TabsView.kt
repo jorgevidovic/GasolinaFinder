@@ -1,4 +1,4 @@
-package com.vidovicsystems.gasolinafinder.views.login
+package com.vidovicsystems.gasolinafinder.ui.views.login
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.material3.Tab
@@ -15,7 +15,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavController
-import com.vidovicsystems.gasolinafinder.viewModel.LoginViewModel
+import com.vidovicsystems.gasolinafinder.ui.viewModel.LoginViewModel
 
 @Composable
 fun TabsView(navController: NavController, loginViewModel: LoginViewModel = hiltViewModel()) {
